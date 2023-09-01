@@ -1,0 +1,139 @@
+body{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-image: url(/img/macos-monterey-wwdc-21-stock-dark-mode-5k-1920x1080-5585.jpg);
+    font-family: sans-serif;
+    color: white; 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#formcontainer{ 
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    border-radius: 5px;
+    backdrop-filter: blur(50px);
+    background: transparent;
+    border:2px solid rgba(255, 255, 255, .5) ; 
+    justify-content: center;
+
+}
+h1{
+    margin: 0;
+    margin-bottom: 10px;
+}
+form{
+    display: flex;
+    
+    flex-direction: column;
+    align-items: center;
+    width:85%;
+    max-width: 580px;
+}
+.gn{
+    margin-right: 10px;
+}
+#specialization{
+display: flex;
+justify-content: space-between;
+width: 90%;
+margin-top: 15px;
+
+}
+#speccheck{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    flex-grow: 1;
+}
+#speclabel{
+    margin-top: 20px;
+    width: 130px;
+    flex-shrink: 0;
+   
+}
+.check{
+width: 100%;
+margin-right: 10px;
+
+}
+.inputs{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    margin-top: 15px;
+    
+}
+#inputs{
+
+    display: flex;
+    width: 90%;
+    margin-top: 15px; 
+}
+input[type=text]{
+    min-width: 0;
+    flex-grow: 1;
+    padding: 5px;
+    border-radius: 3px;
+    border: none;
+}
+input[type=password]{
+    min-width: 0;
+    flex-grow: 1;
+    padding: 5px;
+    border-radius: 3px;
+    border: none;
+}
+input[type=date]{
+    flex-grow: 1;
+    padding: 5px;
+    border-radius: 3px;
+    border: none;
+
+}
+#qualificationcon{
+
+display: flex;
+width: 90%;
+margin-top: 15px;
+}
+#qualification{
+    flex-grow: 1;
+    padding: 5px;
+    min-width: 0;
+}
+
+.olabel{
+    display: inline-block;
+    padding-top: 5px;
+    width: 130px; 
+    flex-shrink: 0;
+}
+#address{
+    padding-bottom: 40px;
+}
+#btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;   
+}
+input[type=button]{
+    padding: 10px;
+    width: 150px;
+    border-radius: 3px;
+    border: none;
+    margin-bottom: 20px;
+    
+}
+@media screen and (min-width:768px){
+ body {
+    height: 100vh;
+    align-items: center;
+ }
+}
+
