@@ -34,10 +34,10 @@ btn.addEventListener("click", function(event) {
     let span = document.getElementById(phone.name);
     span.innerText = "";
   }
-  event.preventDefault();
-  
-    const firstName = document.getElementById("firstname").value;
-    window.location.href = `/welcome.html?firstname=${encodeURIComponent(firstName)}`;
 
+  event.preventDefault();
+    const firstName = document.getElementById("firstname").value;
+    window.location.href = `/bootstrapsolution/welcome.html?firstname=${encodeURIComponent(firstName)}`;
+    
   
 });

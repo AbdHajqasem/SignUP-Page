@@ -1,11 +1,10 @@
 body{
     color: white;
-    background-image: url(/img/macos-monterey-wwdc-21-stock-dark-mode-5k-1920x1080-5585.jpg);
+    background-image: url(/bootstrapsolution/img/macos-monterey-wwdc-21-stock-dark-mode-5k-1920x1080-5585.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
     display: flex;
 }
-input[type=text],[type=date],[type=password],[type=tel],textarea{
+input[type=text],[type=date],[type=password],[type=tel]{
     width: 100%;
     border-radius: 3px;
     border: none;
@@ -28,6 +27,12 @@ label{
      border: 2px solid rgba(255, 255, 255, .5);
      border-radius: 3px;
 }
+textarea{
+    width: 100%;
+    border-radius: 3px;
+    border: none;
+    height: 45px;
+}
 h1{
     margin: 0;
     padding: 0;
@@ -48,6 +53,7 @@ h1{
     background-color: rgb(51, 19, 135); 
     transform: scale(.9);
     transition: .7s ease;
+    background-repeat: no-repeat;
   }
   
 @media screen and (min-width:768px){
