@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp-Page</title>
+    <link rel="stylesheet" href="./sass/signup.css">
+</head>
+<body>
+    <div id="formcontainer">
+        <h1>Sign Up</h1>
+        <form method="post">
+            <div class="inputs">
+                <label for="firstname" class="olabel">First Name: </label>
+                <input type="text" name="firstname" id="fname" placeholder="Enter your first name">
+            </div>
+            <div class="inputs">
+                <label for="lastname" class="olabel">Last Name:</label>
+                <input type="text" name="lastname" id="lname" placeholder="Enter your last name">
+            </div>
+            <div class="inputs">
+                <label for="email" class="olabel">Email:</label>
+                <input type="text" name="email" id="email">
+            </div>
+            <div class="inputs">
+                <label for="mobile " class="olabel">Mobile:</label>
+                <input type="tel" name="mobile" id="mobile">
+            </div>
+            <div id="inputs">
+                <div>
+                    <label class="olabel">Gender:</label>
+                </div>
+                <div>
+                    <input class="gn" type="radio" name="male" id="male" value="female">
+                    <label for="male" class="gn">Male</label>
+                </div>
+            <div>
+                <input class="gn" type="radio" name="female" id="female" value="female">
+                <label for="female" class="gn">Female</label>
+            </div>
+                
+            </div>
+            <div class="inputs">
+                <label for="date" class="olabel">Date Of Birth:</label>
+                <input type="date" name="date" >
+            </div>
+            <div class="inputs">
+                <label for="address" class="olabel">Address:</label>
+                <textarea name="txtarea"></textarea>
+            </div>
+            <div class="inputs">
+                <label for="city" class="olabel">City:</label>
+                <input type="text" name="city" id="city">
+            </div>
+            <div class="inputs">
+                <label for="areapin" class="olabel">Area PIN:</label>
+                <input type="text" name="areapin" id="areapin">
+            </div>
+            <div class="inputs">
+                <label for="state" class="olabel">State:</label>
+                <input type="text" name="state" id="state">
+            </div>
+            <div id="qualificationcon">
+                <label for="qualification" class="olabel">Qualification:</label>
+                <select name="qualification" id="qualification" style="border-radius: 3px;">
+                  <option value="Select Qualification"  selected>Select Qualification</option>
+                  <option value="#">1</option>
+                  <option value="#">2</option>
+                  <option value="#">3</option>
+                  <option value="#">4</option>
+                </select>
+            </div>
+                <div id="specialization">
+                    <div id="speclabel" >
+                        <label  for="speccheck">Specialization:</label>
+                    </div>
+                    <div id="speccheck">
+                        <div class="check"><input type="checkbox" name="computerscience" id="somputerscience">
+                            <label for="somputerscience">Computer Science</label>
+                        </div>
+                        <div class="check"><input type="checkbox" name="informationtechnology" id="informationtechnology">
+                            <label for="informationtechnology">Information Technology</label>
+                        </div>
+                        <div class="check"><input type="checkbox" name="computerarchitecture" id="computerarchitecture">
+                            <label for="computerarchitecture">Computer Architecture</label>
+                        </div>
+                        <div class="check"><input type="checkbox" name="telecommunication" id="telecommunication">
+                            <label for="telecommunication">Tele Communication</label>
+                        </div> 
+                </div>
+                </div>
+                <div class="inputs">
+                    <label for="password" class="olabel">Password:</label>
+                    <input type="password" name="password" id="password">
+                </div>
+                <div id="btn">
+                    <input type="submit" name="signup" id="submit" value="Sign Up">
+                </div>
+        </form>
+    </div>
+</body>

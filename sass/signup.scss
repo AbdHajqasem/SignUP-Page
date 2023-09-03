@@ -1,0 +1,143 @@
+$main-color: white;
+$accent-color: rgba(255, 255, 255, 0.5);
+
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-image: url(../img/macos-monterey-wwdc-21-stock-dark-mode-5k-1920x1080-5585.jpg);
+    font-family: sans-serif;
+    color: $main-color;
+    align-items: center;
+    background-size: cover;
+}
+
+#formcontainer {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    border-radius: 5px;
+    backdrop-filter: blur(50px);
+    background: transparent;
+    border: 2px solid $accent-color;
+    justify-content: center;
+
+    h1 {
+        margin: 0;
+        margin-bottom: 10px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 85%;
+        max-width: 580px;
+
+        .inputs {
+            display: flex;
+            width: 90%;
+            justify-content: space-between;
+            margin-top: 15px;
+
+            .olabel {
+                display: inline-block;
+                padding-top: 5px;
+                width: 130px;
+                flex-shrink: 0;
+            }
+
+            input[type=text], input[type=password], input[type=date],input[type=tel],textarea {
+                flex-grow: 1;
+                padding: 5px;
+                border-radius: 3px;
+                border: none;
+            }
+        }
+
+        #inputs {
+            display: flex;
+            width: 90%;
+            margin-top: 15px;
+
+            .gn {
+                margin-right: 10px;
+            }
+        }
+
+        #specialization {
+            display: flex;
+            justify-content: space-between;
+            width: 90%;
+            margin-top: 15px;
+
+            #speclabel {
+                margin-top: 20px;
+                width: 130px;
+                flex-shrink: 0;
+            }
+
+            #speccheck {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 5px;
+                flex-grow: 1;
+
+                .check {
+                    width: 100%;
+                    margin-right: 10px;
+                }
+            }
+        }
+
+        #qualificationcon {
+            display: flex;
+            width: 90%;
+            margin-top: 15px;
+
+            #qualification {
+                flex-grow: 1;
+                padding: 5px;
+            }
+        }
+
+        textarea {
+            padding-bottom: 36px;
+        }
+
+        #btn {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+
+            #submit {
+                background-color: rgb(17, 5, 64);
+                padding: 10px;
+                width: 150px;
+                border-radius: 3px;
+                border: none;
+                margin-bottom: 20px;
+                color: white;
+              }
+              #submit:hover{
+                background-color: rgba(17, 5, 64, 0.389);
+                transition: .7s ease;
+              }
+              #submit:active {
+                background-color: rgb(51, 19, 135); 
+                transform: scale(.9);
+                transition: .7s ease;
+              }
+            }
+        }
+    }
+@media screen and (min-width:412px){
+   body{
+    height: 100vh;
+    align-items: center;
+   } 
+}
